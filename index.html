@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUD</title>
+    <link rel="stylesheet" href="bootstrap-5.1.3-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="stylesheet.css" />
+  </head>
+  <body>
+    <div class="crud mb-4">
+      <h1 class="font text-center pt-5">CRUD SYSTEM</h1>
+      <hr class="line" />
+
+      <div class="contain d-block mt-5 text-center form-white form-outline">
+        <label for="productname" class="font2">Product Name</label>
+        <input
+          id="productname"
+          type="text"
+          placeholder="sumsung"
+          required
+          class="w-75 style ps-3 d-block mx-auto mt-2"
+        />
+
+        <label for="productprice" class="pt-2 font2">Product Price</label>
+        <input
+          id="productprice"
+          type="number"
+          placeholder="200"
+          required
+          class="d-block ps-3 style w-75 mx-auto mt-2"
+        />
+
+        <label for="productcategory" class="pt-2 font2">Product Category</label>
+        <input
+          id="productcategory"
+          type="text"
+          placeholder="TV"
+          required
+          class="d-block ps-3 style w-75 mx-auto mt-2"
+        />
+
+        <label for="productdescription" class="pt-3 font2"
+          >Product Description</label
+        >
+        <input
+          id="productdescription"
+          required
+          type="text"
+          maxlength="100"
+          class="d-block style w-75 mx-auto mt-2 mb-3"
+        />
+
+        <button
+          id="add"
+          class="btn btn-outline-dark mx-auto mt-3 w-25"
+          onclick="added()"
+        >
+          Submit
+        </button>
+        <button
+          id="updates"
+          class="btn btn-outline-danger mx-auto w-25"
+          onclick="added()"
+        >
+          Updated
+        </button>
+      </div>
+    </div>
+
+    <div class="disp mt-5">
+      <table class="table mt-4">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Product Name</th>
+            <th>Product Price</th>
+            <th>Product Category</th>
+            <th>Product Description</th>
+            <th>Upadate</th>
+            <th>Delete</th>
+            <th>Search</th>
+          </tr>
+        </thead>
+        <tbody id="tbt"></tbody>
+      </table>
+    </div>
+    <script src="Main.js"></script>
+  </body>
+</html>

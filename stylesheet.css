@@ -1,0 +1,27 @@
+.font{
+    font-size:60px !important;
+}
+
+.font2{
+    font-size: 25px !important;
+}
+
+.crud{
+    height: 800px;
+    background-color: #33C5FE;
+}
+
+.style{
+    border: 1px ;
+    border-radius: 30px !important;
+    height:40px;
+}
+
+.line{
+    color:rgb(9, 75, 53);
+    height: 40px;
+}
+
+#updates{
+    display: none;
+}
